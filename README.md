@@ -1,1 +1,1 @@
-# JVM Playground
+# JVM Playground [![CircleCI](https://circleci.com/gh/matchilling/jvm-playground.svg?style=svg)](https://circleci.com/gh/matchilling/jvm-playground)
