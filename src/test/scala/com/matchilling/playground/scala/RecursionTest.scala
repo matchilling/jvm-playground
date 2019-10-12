@@ -32,4 +32,10 @@ class RecursionTest {
     val expectedOutput = "1\n" + "2\n" + "3\n" + "4\n" + "5\n"
     assertEquals(expectedOutput, outContent.toString)
   }
+
+  @Test
+  def factorial(): Unit = {
+    val result = Recursion.factorial(3)
+    assertEquals(6, result)
+  }
 }

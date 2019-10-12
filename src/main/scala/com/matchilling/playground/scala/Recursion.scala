@@ -18,4 +18,19 @@ object Recursion {
       println(number)
     }
   }
+
+  def factorialNotTailOptimised(number: Int): Int = {
+    if (number == 0) return 1
+    number * factorialNotTailOptimised(number - 1)
+  }
+
+  def factorial(number: Int): Int = {
+    @tailrec
+    def iterator(number: Int, result: Int): Int = {
+      if (number == 0) return result
+      iterator(number - 1, result * number)
+    }
+
+    iterator(number, 1)
+  }
 }
